@@ -1,0 +1,226 @@
+/* TUDO */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+  
+  }
+  /*seleção de qualquer texto*/
+  ::selection {
+    color: white;
+    background-color: #0f5800;
+  }
+  
+  /* todo body */
+  body {
+    margin: 0;
+    text-align: center;
+    font-size:larger;
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(#307523,#515321);
+    
+    
+  }
+  /* (block)barra com navegaçoes principais (ex: Forum,loja,Cadastro e login */
+  .block {
+    z-index: 50;
+    position: fixed;
+    height: 18vh;
+    background-color: black;
+    width: 100%;
+  
+  }
+  .block > li,.block > li > a {
+    display: inline;
+    margin-left: 6vw;
+  }
+  /*responsividade das margins dos botões tags li*/
+  @media (max-width:600px){
+    .block > li{
+      margin-left: 0;
+    }
+  }
+  /*responsividade das margins dos botões e tags li a*/
+  @media (max-width:1000px){
+    .block > li > a {
+      margin: 0;
+    }
+  }
+  .block  a{
+    color: white;
+    text-decoration: none;
+    font-size: 8vh;
+    
+  
+  }
+  
+  /* Botão de cadastro*/
+  .b1 {
+    color: white;
+    border: solid 0.5vh ;
+    padding: 1.2vh;
+    border-radius: 2vh;
+    background-color: #4db339;
+    margin: 0.5vw 1vw 1vw 1vw;
+    float: right;
+  }
+  .b1:hover {
+    color: #0d6302;
+  
+  }
+  
+  .b1:active {
+    background-color: #5ed646;
+    border: solid #0d6302;
+    border-radius: 2vh;
+  
+  }
+  
+  /* Banner img  */
+  .banner {
+    background: url("../../Assets/floretagrande.jpg") no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 65vh;
+  }
+  /* HOME FORUM LOJA */
+  .menu-principal {
+    padding:250px 0;
+  }
+  
+  
+  /* barra que contem (home forum loja) */
+  .menu-principal > a{
+    text-decoration: none;
+    border: white;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    /* TOP RIGHT BOTTOM LEFT */
+    padding: 0 50px 0 50px;
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+    
+  
+  }
+  
+  /* corpo que ingloba todo conteudo menos banner */
+  .corpo {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    
+  
+  }
+  /*responsividade para o texto e a barra de navegação lateral*/
+  @media  (max-width: 900px) {
+    .corpo {
+      display:block
+    }
+  
+      
+  }
+  
+  
+  
+  /* block com direcionamento lateral */
+  .menu-lateral {
+    
+    margin: 0 2.5vw 0 2.5vw;
+    display: block;
+   
+  
+  
+  
+  }
+  .menu-lateral > fieldset {
+    min-width: 250px;
+    border: 0.4vh solid black;
+    background-color: #307523;
+    border-radius: 5px;
+    color:white;
+    margin: 0 0 2% 0;
+  
+  }
+  /* ediçaão da legenda das lista (legend) */
+  .menu-lateral > fieldset > legend {
+    border: 2px black solid;
+    border-radius: 6px;
+    color:#307523;
+    background-color: black;
+    padding: 0 2%;
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+  }
+  /* edição dos itens da lista */
+  .menu-lateral > fieldset > a {
+    margin: 10%;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    font-size: 20px;
+    border: 0.4vh solid #307523;
+    
+  
+  
+  }
+  /* ediçoes de transiçoes com a borda */
+  .menu-lateral > fieldset > a:hover {
+    border: 0.4vh solid black;
+    border-radius: 5px;
+    transition: 0.5s;
+    color:white;
+    background-color: #0d6302;
+  }
+  
+  
+  /* ediçoes do texto Central*/
+  .texto-central{
+    font-size: 24px;
+    padding: 3% 10%;
+    margin: 1.3%;
+    text-align:justify;
+    color:white;
+    border:solid black 0.4vh ;
+    border-radius: 5px;
+    background-color: #307523;
+    
+  }
+  
+  /* ediçoes do texto titulos */
+  .texto-central > h3 {
+    margin: 5% 0 5% 0;
+    font-size: 35px;
+    text-align: center;
+    
+  }
+  /*responsividade dos titulos*/
+  @media (max-width:500px) {
+    .texto-central > h3 {
+      margin: 5% 0 5% 0;
+      font-size: 20px;
+      text-align: center;
+      
+    }
+  }
+  
+  /* login textoe */
+  
+  .grupform {
+    margin: 3% 12%;
+    padding: 5% 5%;
+    font-size: 26px;
+    border-style: solid;
+    background-color: #307523;
+    text-align: center;
+    color:white;
+    
+  
+  }
