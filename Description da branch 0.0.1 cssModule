@@ -1,0 +1,28 @@
+Estava com dificuldade em css, importava o css ele ia para todas as paginas, meio que todos arquivo de css viravam um so.
+
+Comecei a procurar formas de que isso não acontecer, primeiramente achei o 
+
+#styled-componets
+  Ele meio que criava um componete de css, virava meio que uma tag, tipo que nem um hook, achei que encheria o codigo 
+  de tag acabaria ficando meio confuso por que eu ja tinha o css pronto ai eu teria que refazer tudo e ainda ficaria 
+  meio 'poluido' ou talvez eu que não vi uma forma melhor de utilizar ele.
+
+#tailwind css
+  Achei ele bem legal ficava tipo um css inline, (apesar de ser meio estranho) ele usava algumas siglas ai eu pensei
+  mds vai da uma trabalheira se eu tiver que dar manutenção nisso mas como tem as hooks acho que não ficaria, mas 
+  ainda não era o que eu queria por que eu não queria ter que refazer do 0 css ate por que eu quero me aprofundar 
+  em testar as ferramentas e não focar num css.
+  
+#css-module
+  acgo que foi o melhor, eu não precisava instalar nenhum, pacote e ainda atendia o que eu queria pegar, usar 
+  partes de css especifica em lugarres especificos de arquivos diferente e era so  cria o arquivo  nomedoarquivo.module.css
+  tinha que ter o .module.css porque ele não reconhecia e depois era so importa ele  tipo import nomequequiser from 'localdoarquivo'
+  quando eu queria usar numa tag era so abri um className={nomequequiser.classeouid} 
+  felicidade tinha um css bobando naquela tag
+
+
+ainda tem coisa que quero corrigir testar responsividade e renomear as classes por que ta com nome meio estranho.
+
+
+
+  
