@@ -1,0 +1,73 @@
+/* css Especifico do header seria toda a barra padrão de cima*/
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+  
+  }
+  
+  /* (block)barra com navegaçoes principais (ex: Forum,loja,Cadastro e login */
+  .block {
+    z-index: 50;
+    position: fixed;
+    height: 18vh;
+    background-color: black;
+    width: 100%;
+  
+  }
+  .block > li,.block > li > a {
+    display: inline;
+    margin-left: 6vw;
+  }
+  /*responsividade das margins dos botões tags li*/
+  @media (max-width:600px){
+    .block > li{
+      margin-left: 0;
+    }
+  }
+  /*responsividade das margins dos botões e tags li a*/
+  @media (max-width:1000px){
+    .block > li > a {
+      margin: 0;
+    }
+  }
+  .block  a{
+    color: white;
+    text-decoration: none;
+    font-size: 8vh;
+    
+  
+  }
+
+    /* Banner img  */
+    .banner {
+        background: url("../../Assets/floretagrande.jpg") no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        height: 65vh;
+      }
+
+      .b1 {
+        color: white;
+        border: solid 0.5vh ;
+        padding: 1.2vh;
+        border-radius: 2vh;
+        background-color: #4db339;
+        margin: 0.5vw 1vw 1vw 1vw;
+        float: right;
+      }
+      .b1:hover {
+        color: #0d6302;
+      
+      }
+      
+      .b1:active {
+        background-color: #5ed646;
+        border: solid #0d6302;
+        border-radius: 2vh;
+      
+      }
+      
